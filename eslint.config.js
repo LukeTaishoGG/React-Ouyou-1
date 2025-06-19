@@ -1,7 +1,7 @@
-import js from '@eslint/js';
-import react from 'eslint-plugin-react';
-import tseslint from 'typescript-eslint';
-import { defineConfig } from 'eslint/config';
+import js from '@eslint/js'
+import react from 'eslint-plugin-react'
+import tseslint from 'typescript-eslint'
+import { defineConfig } from 'eslint/config'
 
 export default defineConfig({
   files: ['src/**/*.{js,jsx,ts,tsx}'],
@@ -27,4 +27,4 @@ export default defineConfig({
       version: 'detect',
     },
   },
-});
+})

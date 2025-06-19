@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import { useUsers, loadImg } from './User';
+import { Link } from 'react-router-dom'
+import { useUsers, loadImg } from './User'
 const UserPage = () => {
-  const { users, loading, error } = useUsers();
+  const { users, loading, error } = useUsers()
   return (
     <div className="user-page-parent">
       <div className="userName">
@@ -22,6 +22,6 @@ const UserPage = () => {
         )}
       </div>
     </div>
-  );
-};
-export default UserPage;
+  )
+}
+export default UserPage
