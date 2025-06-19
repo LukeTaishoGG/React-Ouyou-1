@@ -3,8 +3,8 @@ import { useUsers, loadImg } from './User';
 const UserPage = () => {
   const { users, loading, error } = useUsers();
   return (
-    <div className='user-page-parent'>
-      <div className='userName'>
+    <div className="user-page-parent">
+      <div className="userName">
         {loading ? (
           <img src={loadImg} />
         ) : error ? (

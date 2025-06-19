@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-export const loadImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGfM615QbY86zRUSKdxwIvuX3t_KW6g2Dsgw&s";
+import { useEffect, useState } from 'react';
+export const loadImg =
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGfM615QbY86zRUSKdxwIvuX3t_KW6g2Dsgw&s';
 export interface Address {
   street: string;
   suite: string;
@@ -17,20 +18,20 @@ export interface User {
   address: Address;
   company: Company;
 }
-const API_URL = "https://jsonplaceholder.typicode.com";
+const API_URL = 'https://jsonplaceholder.typicode.com';
 function getUserApiUrl(userId?: string | number): string {
   return userId ? `${API_URL}/users/${userId}` : `${API_URL}/users`;
 }
 function useFetch<T>(url: string | null) {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
   useEffect(() => {
     if (!url) return;
     setLoading(true);
     fetch(url)
       .then((res) => {
-        if (!res.ok) throw new Error("Error");
+        if (!res.ok) throw new Error('Error');
         return res.json() as Promise<T>;
       })
       .then((json) => {

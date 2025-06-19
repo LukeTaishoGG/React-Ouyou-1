@@ -21,3 +21,5 @@ Layout　UserPage　UserDetail
 ・Layout　UserPage　UserDetailのファイルとcssを読み込み、ルーティングを設定。
 /でUserPageを表示するように設定
 ・Index.htmlでMainRouter.tsxをアプリの起点として読み込む
+6.ESLint + Prettier 構築
+コードを自動整形
